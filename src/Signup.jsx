@@ -14,9 +14,9 @@ function Signup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3001/register', { name, email, phone,password })
+    axios.post('https://user-login-server.onrender.com/register', { name, email, phone,password })
       .then(result => {console.log(result)
-      Navigate('/login')
+      Navigate('/')
   })
       .catch((err) => console.log(err));
   };

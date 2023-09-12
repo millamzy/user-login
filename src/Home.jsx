@@ -5,7 +5,7 @@ import axios from 'axios';
 function Home() {
   axios.defaults.withCredentials = true;
   useEffect(()=>{
-    axios.get('http://localhost:3001/home')
+    axios.get('https://user-login-server.onrender.com/home')
     .then(result => {console.log(result)
       if (result.data !== "Success") {
       //  navigate('/login')
